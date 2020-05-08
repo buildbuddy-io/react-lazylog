@@ -5,9 +5,9 @@
 .black { color: #4e4e4e; }
 .red { color: #f44336; }
 .green { color: #4CAF50; }
-.yellow { color: #FFEB3B; }
+.yellow { color: #FFEE58; }
 .blue { color: #2196f3; }
-.magenta { color: #9C27B0; }
+.magenta { color: #7E57C2; }
 .cyan { color: #00BCD4; }
 .white { color: #eeeeee; }
 .grey { color: #969696; }
@@ -15,9 +15,9 @@
 .blackBold { color: #7c7c7c; }
 .redBold { color: #f44336; }
 .greenBold { color: #4CAF50; }
-.yellowBold { color: #FFEB3B; }
+.yellowBold { color: #FFEE58; }
 .blueBold { color: #2196F3; }
-.magentaBold { color: #9C27B0; }
+.magentaBold { color: #7E57C2; }
 .cyanBold { color: #00BCD4; }
 .whiteBold { color: #ffffff; }
 .greyBold { color: #969696; }
@@ -25,9 +25,9 @@
 .blackBg { background-color: #4e4e4e; }
 .redBg { background-color: #f44336; }
 .greenBg { background-color: #4CAF50; }
-.yellowBg { background-color: #FFEB3B; }
+.yellowBg { background-color: #FFEE58; }
 .blueBg { background-color: #2196F3; }
-.magentaBg { background-color: #9C27B0; }
+.magentaBg { background-color: #7E57C2; }
 .cyanBg { background-color: #00BCD4; }
 .whiteBg { background-color: #eeeeee; }
 .greyBg { background-color: #969696; }
