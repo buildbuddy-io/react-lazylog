@@ -9,13 +9,6 @@ const foregroundColors = {
   '36': 'cyan',
   '37': 'white',
   '90': 'grey',
-  '91': 'red',
-  '92': 'green',
-  '93': 'yellow',
-  '94': 'blue',
-  '95': 'magenta',
-  '96': 'cyan',
-  '97': 'white',
 };
 const backgroundColors = {
   '40': 'black',
@@ -26,14 +19,6 @@ const backgroundColors = {
   '45': 'magenta',
   '46': 'cyan',
   '47': 'white',
-  '100': 'grey',
-  '101': 'red',
-  '102': 'green',
-  '103': 'yellow',
-  '104': 'blue',
-  '105': 'magenta',
-  '106': 'cyan',
-  '107': 'white',
 };
 const styles = {
   '1': 'bold',
@@ -50,10 +35,10 @@ const eraseChar = (matchingText, result) => {
       text.length === 1
         ? result.slice(0, result.length - 1)
         : result.map((item, i) =>
-          index === i
-            ? { ...item, text: text.substr(0, text.length - 1) }
-            : item
-        );
+            index === i
+              ? { ...item, text: text.substr(0, text.length - 1) }
+              : item
+          );
 
     return [matchingText, newResult];
   }
