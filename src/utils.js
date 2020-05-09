@@ -1,4 +1,5 @@
 import { List, Range } from 'immutable';
+import reactStringReplace from 'react-string-replace';
 
 export const ENCODED_NEWLINE = 10; // \n
 export const ENCODED_CARRIAGE_RETURN = 13; // \r
@@ -109,10 +110,10 @@ export const getLinesLengthRanges = rawLog => {
 };
 
 export const searchFormatPart = ({
-  // searchKeywords,
+  searchKeywords,
   nextFormatPart,
-  // caseInsensitive,
-  // replaceJsx,
+  caseInsensitive,
+  replaceJsx,
 }) => part => {
   let formattedPart = part;
 
@@ -120,13 +121,13 @@ export const searchFormatPart = ({
     formattedPart = nextFormatPart(part);
   }
 
-  // if (caseInsensitive) {
-  //   if (part.toLowerCase().includes(searchKeywords.toLowerCase())) {
-  //     return reactStringReplace(formattedPart, searchKeywords, replaceJsx);
-  //   }
-  // } else if (part.includes(searchKeywords)) {
-  //   return reactStringReplace(formattedPart, searchKeywords, replaceJsx);
-  // }
+  if (caseInsensitive) {
+    if (part.toLowerCase().includes(searchKeywords.toLowerCase())) {
+      return reactStringReplace(formattedPart, searchKeywords, replaceJsx);
+    }
+  } else if (part.includes(searchKeywords)) {
+    return reactStringReplace(formattedPart, searchKeywords, replaceJsx);
+  }
 
   return formattedPart;
 };
