@@ -37,10 +37,8 @@
     "@mattiasbuelens/web-streams-polyfill": "^0.2.0",
     "fetch-readablestream": "^0.2.0",
     "immutable": "^3.8.2",
-    "lodash": "4.17.14",
     "mitt": "^1.1.2",
     "prop-types": "^15.6.1",
-    "react-string-replace": "^0.4.4",
     "react-virtualized": "^9.21.0",
     "text-encoding-utf-8": "^1.0.1",
     "whatwg-fetch": "^2.0.4"
